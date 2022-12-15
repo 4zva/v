@@ -10,7 +10,7 @@
     background: url(Rectangle3.jpg);
     max-width: 1920px;
     margin: 0 auto;
-    
+    position: relative;    
    
     
 
@@ -19,6 +19,7 @@
     position: absolute;
     z-index: -2;
     width: 100%;
+    object-fit: cover;
 }
 .men {
     display: flex;
@@ -231,6 +232,17 @@ color: #FFFFFF;
      
 
 }
+@keyframes render {
+    0% {
+        background-color: #D1A954;
+    }
+    50% {
+        background-color: #000;
+    }
+    100% {
+        background-color: #D1A954;
+    }
+}
 .text5 {
 font-family: 'Open Sans';
 font-style: normal;
@@ -280,7 +292,7 @@ color: #FFFFFF;
 .block2 {
     max-width: 1920px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 120px;
     background: #333333;
     
 }
@@ -685,7 +697,7 @@ margin-top: 25px;
 .up {
     display: flex;
     flex-direction: row;
-    margin:  0 auto;
+    justify-content: space-between;
 }
 .down {
     display: flex;
@@ -734,10 +746,7 @@ color: #FFFFFF;
     margin: 0 auto;
     
 }
-.input {
-    margin-left: 28px;
 
-}
 .txt {
     font-family: 'Open Sans';
 font-style: normal;
@@ -773,12 +782,18 @@ color: #989898;
 
 
 }
+.part2 {
+    margin-left: 30px;
+}
 .four {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
-.part3 {
-    margin-left: 30px;
+.part12 {
+    display: flex;
+    justify-content: space-between;
+
 }
 .but1 {
     background: #D1A954;
@@ -1299,6 +1314,7 @@ padding-top: 200px;}
     .four {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
     .part3 {
         margin: 0 auto;
@@ -1312,12 +1328,16 @@ padding-top: 200px;}
         
     }
     .txt1 {
-        width: 400px;
+        width: 460px;
+       
         align-items: center;       
     }
+    .txt {
+        width: 200px;
+    }   
     .soob {
         margin: 0 auto;
-        padding-left: 25px;
+      
     }
     .text19 {
         justify-content: center;
@@ -1421,7 +1441,7 @@ padding-top: 200px;}
     .text15 {
         padding-left: 50px;
     }
-    .podblock2
+    
     
 
 
@@ -1437,7 +1457,7 @@ padding-top: 200px;}
         
     }
     .text4 {
-        font-size: 9px;
+        font-size: 10px;
         width: 380px;
     }
     .center {
@@ -1542,8 +1562,7 @@ padding-top: 200px;}
         font-size: 30px;
     }
     .text4 {
-        font-size: 7px;
-        width: 270px;
+        width: 350px;
     }
     .number1 {
         margin-left: 185px;
@@ -1619,9 +1638,6 @@ padding-top: 200px;}
     }
     .text8 {
         margin-top: 50px;
-    }
-    .block2 {
-        padding-right: 30px;
     }
     .img5 {
         height: 80px;
@@ -1774,9 +1790,6 @@ padding-top: 200px;}
     .text182 {
         font-size: 27px;
     }
-    .input {
-        margin-left: 17px ;
-    }
    
 }
 @media (max-width:475px) {
@@ -1798,31 +1811,33 @@ padding-top: 200px;}
     .gas {
         margin-left: 15px;
     }
-    .soob {
-        padding-left: 25px;
-    }
     .txt {
-        width: 150px;
+        width: 140px;
+    }
+    .txt1 {
+        width: 320px;
     }
     .four {
         margin:  0 auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+    }
+    .inpuy {
+        margin-left: 0px;
     }
     .up {
         max-width: 350px;
     }
-    .txt1 {
-        width: 300px;
+    .img1 {
+        min-height: 280px;
+    }
+    .text4 {
+        width: 270px;
     }
     
     .part12 {
         justify-content: space-between;
         
-    }
-
-    .soob {
-        padding-right: 50px;
     }
     .block4 {
         max-width: 468px;
@@ -1850,9 +1865,6 @@ padding-top: 200px;}
     }
 }
 @media (max-width: 446px) {
-    .text4 {
-        font-size: 5px;
-    }
     .text3 {
         font-size: 25px;
 
@@ -1987,14 +1999,12 @@ padding-top: 200px;}
         width: 150px;
     }
     .txt {
-        width: 120px;
+        width: 110px;
     }
     .txt1 {
-        width: 275px;
+        width: 260px;
     }
-    .four {
-        justify-content: start;
-    }
+  
     .up {
         max-width: 320px;
     }
@@ -2042,9 +2052,6 @@ padding-top: 200px;}
     }
     .gas {
         margin-left: 0px;
-    }
-    .input {
-        margin-left: 7px;
     }
 }
 @media (max-width: 357px) {
